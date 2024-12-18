@@ -8,6 +8,7 @@ class ImageProcessor():
     
     #добавление фильтра EMBOSS
     def add_filter(self):
+        #self.img.emboss(radius=10,sigma=3)
         self.img = self.img.filter(ImageFilter.EMBOSS)
         return self.img
     
